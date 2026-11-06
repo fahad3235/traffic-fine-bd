@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traffic Fine BD &#8212; Bangladesh traffic fines, Road Transport Act 2018</title>
+<meta name="description" content="Offline bilingual (English / &#2476;&#2494;&#2434;&#2482;&#2494;) reference for Bangladesh traffic fines under the Road Transport Act 2018: searchable offence list, maximum fines, jail terms, demerit points and a fine estimator.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div>
+      <h1 data-i18n="appTitle">Traffic Fine BD</h1>
+      <p class="tagline" data-i18n="appTag">Bangladesh traffic fines at a glance &#8212; Road Transport Act 2018</p>
+    </div>
+    <button id="lang-toggle" type="button">&#2476;&#2494;&#2434;&#2482;&#2494;</button>
+  </div>
+</header>
+
+<main class="main">
+  <section class="controls" aria-label="Search and filter">
+    <label class="search-wrap">
+      <span class="field-label" data-i18n="searchLabel">Search offences</span>
+      <input id="search" type="search" autocomplete="off" placeholder="Try &quot;helmet&quot;, &quot;licence&quot;, &quot;speed&quot;...">
+    </label>
+    <div class="control-row">
+      <div>
+        <span class="field-label" data-i18n="categoryLabel">Category</span>
+        <div id="chips" class="chips"></div>
+      </div>
+      <label class="sort-wrap">
+        <span class="field-label" data-i18n="sortLabel">Sort by</span>
+        <select id="sort">
+          <option value="high" data-i18n="sortHigh">Highest fine first</option>
+          <option value="low" data-i18n="sortLow">Lowest fine first</option>
+          <option value="az" data-i18n="sortAZ">Name A to Z</option>
+        </select>
+      </label>
+    </div>
+    <p id="stats" class="stats" aria-live="polite"></p>
+  </section>
+
+  <section class="calc" aria-label="Fine estimator">
+    <h2 data-i18n="calcTitle">Fine estimator</h2>
+    <div id="calc-body"></div>
+  </section>
+
+  <section aria-label="Offences">
+    <div id="offence-list" class="offence-list"></div>
+  </section>
+
+  <section class="info-grid">
+    <article class="card info">
+      <h2 data-i18n="pointsTitle">The 12-point licence</h2>
+      <p data-i18n="pointsBody">Every driving licence in Bangladesh carries 12 demerit points. Nine types of offences &#8212; including speeding, reckless driving, drunk driving, illegal overtaking and signal violations &#8212; deduct points. When the points reach zero, the licence is cancelled. Offences marked with the demerit badge below are demerit-point offences.</p>
+    </article>
+    <article class="card info">
+      <h2 data-i18n="finedTitle">If you are fined &#8212; what to do</h2>
+      <ol class="steps">
+        <li data-i18n="fined1">Stay calm and ask the officer for the case slip (challan) with the offence and the amount written on it.</li>
+        <li data-i18n="fined2">Note the officer&#8217;s name and badge number and the vehicle number on the slip.</li>
+        <li data-i18n="fined3">Pay only against the official slip &#8212; at the designated bank or BRTA office &#8212; and keep the receipt.</li>
+        <li data-i18n="fined4">If you believe the fine is wrong, you can contest it in court; keep the slip as evidence.</li>
+        <li data-i18n="fined5">Never pay cash on the spot without a slip.</li>
+      </ol>
+    </article>
+    <article class="card info">
+      <h2 data-i18n="sourcesTitle">Where the numbers come from</h2>
+      <p data-i18n="sourcesBody">Fine amounts are the maximum fines under the Road Transport Act 2018 (in force 1 November 2019), as reported by The Daily Star and The Business Standard (TBS) in November 2019. The amount actually imposed can be lower &#8212; the officer or the court decides. Verify current rules with BRTA.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="foot">
+  <p data-i18n="disclaimer">Reference only &#8212; not legal advice. Fines shown are statutory maxima; the amount actually imposed can be lower. Rules may change; check with BRTA or a lawyer for your case.</p>
+  <p class="foot-note" data-i18n="footerNote">100% offline &#183; No account &#183; Your selection stays on this device</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
